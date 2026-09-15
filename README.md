@@ -3,14 +3,20 @@
 Nettside med datafiler (`.csv`, `.txt` m.m.) til boka *Programmering for naturvitenskap og
 matematikk* av Andreas Haraldsrud og Joakim Sundnes.
 
-Publisert side: aktiver GitHub Pages under **Settings → Pages → Source: Deploy from branch →
-`main` → `/ (root)`** for å få en offentlig lenke (`https://andreasdh.github.io/programmering-for-naturvitenskap-og-matematikk/`).
+Siden er en [Jupyter Book](https://jupyterbook.org) som bygges automatisk av GitHub Actions
+(`.github/workflows/main.yml`, samme mønster som `bifrost`/`programmering-i-kjemi`) og publiseres
+til `gh-pages`-branchen ved hver push til `main`.
+
+**Førstegangsoppsett:** etter at Action har kjørt én gang (og opprettet `gh-pages`-branchen), gå
+til **Settings → Pages → Source: Deploy from branch → `gh-pages` → `/ (root)`** for å aktivere
+siden på `https://andreasdh.github.io/programmering-for-naturvitenskap-og-matematikk/`.
 
 ## Struktur
 
-- `index.html` – oversikt over kapitler med datafiler
-- `kapittel-XX.html` – én side per kapittel, med tabell over filer, hva de brukes til, og status
-- `data/kapittel-XX/` – selve datafilene (legges til etter hvert)
+- `intro.md` – forside
+- `kapittel-XX.md` – én side per kapittel, med tabell over filer, hva de brukes til, og status
+- `_toc.yml` / `_config.yml` – Jupyter Book-oppsett
+- `data/kapittel-XX/` – selve datafilene, lenket til fra kapittelsidene
 
 ## Status
 

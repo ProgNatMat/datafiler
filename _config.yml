@@ -1,0 +1,29 @@
+#######################################################################################
+# Book settings
+title: Datafiler
+author: Andreas Haraldsrud og Joakim Sundnes
+
+# Build only pages that are explicitly included in _toc.yml.
+only_build_toc_files: true
+
+description: >-
+  Datafiler til boka Programmering for naturvitenskap og matematikk
+
+#######################################################################################
+# Execution settings
+execute:
+  execute_notebooks: "off"
+
+#######################################################################################
+# HTML-specific settings
+html:
+  use_issues_button: false
+  use_repository_button: true
+  home_page_in_navbar: false
+
+#######################################################################################
+# Launch button settings
+repository:
+  url: https://github.com/andreasdh/programmering-for-naturvitenskap-og-matematikk
+  path_to_book: ""
+  branch: main
