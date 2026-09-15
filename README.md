@@ -14,6 +14,8 @@ Publisert side: aktiver GitHub Pages under **Settings → Pages → Source: Depl
 
 ## Status
 
-Kapittel 15, 16, 19, 21 og 22 har identifiserte datafilreferanser (kapittel 8–14, 17, 18 og 20
-har ingen). Se `TODO.md` for full liste over filer som gjenstår å lage, inkludert et par
-navnekollisjoner i boka som må avklares.
+Kapittel 15, 16, 19, 21 og 22 har datafiler (kapittel 8–14, 17, 18 og 20 har ingen). Alle filene
+er lagt inn — de fleste er ekte datasett gjenbrukt fra forfatterens andre bøker/kurs
+(`programmering-i-kjemi`, `realprog`), noen er syntetiske datasett generert med realistiske
+verdier der ingen ekte fil fantes. Se `TODO.md` for detaljer, kilder og noen punkter som bør
+kvalitetssjekkes.

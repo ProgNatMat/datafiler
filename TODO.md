@@ -1,55 +1,44 @@
-# Gjenstående arbeid: datafiler
+# Status på datafiler
 
-Alle filene under er identifisert fra bokteksten (kapittel 8–22, ekskl. løsningsforslag), men
-ingen av dem er lagt inn i repoet ennå. Dette tas i en senere runde.
+Alle 34 identifiserte filreferanser (kapittel 8–22, ekskl. løsningsforslag) har nå en fil i
+`data/kapittel-XX/`. Kilder:
 
-## Kapittel 15 – Visualisering og datahåndtering
-- periodesystemet.csv, dec.txt, bands.txt — øvingsfiler, Test deg selv 8.4
-- pingviner.txt — eksempel i brødtekst
-- grunnstoffer.csv — Test deg selv 8.6
-- run1.csv – run5.csv — Test deg selv 8.7 (absorbansmålinger)
-- oksygenkonsentrasjoner.csv — Oppgave 8.13
-- tinn.txt — isotopoppgave
-- titrering.txt — Oppgave 8.18K (NaOH/eddiksyre)
-- ioniseringsenergi.txt — Oppgave 8.19K
-- blindern_yr_1938_2023.csv — Oppgave 8.26G (kilde: Norsk klimaservicesenter)
+- **Ekte data, gjenbrukt** fra `andreasdh/programmering-i-kjemi` og `andreasdh/realprog`:
+  periodesystemet.csv, dec.txt, bands.txt, pingviner.txt/penguins.txt (identisk datasett),
+  tinn.txt, titrering.txt, ioniseringsenergi.txt, antall-meldte-covid-19.txt, run1–5.csv
+  (enzymkinetikk S40/S60/S120/S225/S900), smitte_virus.csv, vin.csv, iris.csv,
+  titrering_eddiksyre_NaOH.txt, heistur.csv (fra `heistur_kjemi_fysikk.txt`, verdiene stemmer
+  eksakt med utdraget i boka), planeter_data.dat (ekte astronomiske verdier for de åtte planetene).
+- **Gjenbrukt/repurposert**: titrering_glykolsyre.csv (generisk titrerkurve fra
+  `titreringsdata.txt` — boka har ikke noe eget datasett for glykolsyre-forsøket).
+- **Syntetisk, generert med realistiske verdier** (matcher tallene vist i bokutdraget der de
+  finnes, resten generert): grunnstoffer.csv (ekte periodesystemdata, filtrert),
+  oksygenkonsentrasjoner.csv, temperatur.txt, blindern_yr_1938_2023.csv, fiskedata.csv,
+  kornfordeling.csv, nedbor_regioner.csv, aksel_tid.csv, infiltrasjon.csv, temp_dybde.csv,
+  sediment_elv.csv, salt_mass.csv, ice_core_CO2.csv, co2_monthly.csv.
 
-## Kapittel 16 – Statistikk
-- smitte_virus.csv — logistisk modell
-- vin.csv — Oppgave 9.9K
-- penguins.txt — Oppgave 9.15B
-- fiskedata.csv — Oppgave 9.16B (data delvis i oppgaveteksten)
-- kornfordeling.csv — Oppgave 9.17G (data delvis i oppgaveteksten)
-- nedbor_regioner.csv — Oppgave 9.18G (data delvis i oppgaveteksten)
+## Bør kvalitetssjekkes / vurderes erstattet med ekte data
 
-## Kapittel 19 – Derivasjon og integrasjon
-- titrering_eddiksyre_NaOH.txt — avsnitt 12.2
-- heistur.csv (foreslått navn, boka gir ikke filnavn) — Test deg selv 12.4 (data delvis i teksten)
-- titrering_glykolsyre.csv (foreslått navn) — Oppgave 12.11K
-- aksel_tid.csv — Oppgave 12.17 (data delvis i teksten)
-- infiltrasjon.csv — Oppgave 12.18G (data delvis i teksten)
-- temp_dybde.csv — Oppgave 12.19 (data delvis i teksten)
-- sediment_elv.csv — Oppgave 12.20G (data delvis i teksten)
+1. **blindern_yr_1938_2023.csv** — syntetisk. Ekte data finnes hos
+   [seklima.met.no](https://seklima.met.no) (stasjon Blindern) og bør hentes derfra hvis mulig.
+2. **ice_core_CO2.csv** og **co2_monthly.csv** — syntetiske tilnærminger til kjente trender
+   (Vostok-iskjernen / Mauna Loa). Nettverkstilgangen i denne økten tillot ikke direkte henting
+   fra NOAA. Ekte data:
+   - https://www.ncei.noaa.gov/access/paleo-search/study/6091 (Vostok)
+   - https://gml.noaa.gov/ccgg/trends/data.html (Mauna Loa)
+3. **titrering_glykolsyre.csv** — dette er en generisk titrerkurve, ikke spesifikt glykolsyre.
+   Fungerer fint pedagogisk, men er ikke kjemisk presis for akkurat den syra.
+4. Filene merket "Syntetisk" i kapittel 16 og 19 (fiskedata, kornfordeling, nedbør, aksel_tid,
+   infiltrasjon, temp_dybde, sediment_elv) er generert til å matche de første radene som vises i
+   selve oppgaveteksten i boka, med resten generert etter en realistisk/fysisk plausibel modell.
+   De støtter oppgavene fint, men tallene vil ikke nødvendigvis stemme overens med en eventuell
+   fasit fra forlaget.
 
-## Kapittel 21 – Kontinuerlige modeller
-- planeter_data.dat — planetbanesimulering
-- salt_mass.csv — salttap-oppgave
-- ice_core_CO2.csv — Oppgave 14.26G (kilde: NOAA, kan trolig hentes direkte)
-- co2_monthly.csv — Oppgave 14.26G (kilde: NOAA, kan trolig hentes direkte)
+## Avklart fra forrige runde
 
-## Kapittel 22 – Maskinlæring
-- iris.csv — klassisk datasett
-- vin.csv — Oppgave 15.6K (trolig samme fil som i kapittel 16)
-
-## Ting som må avklares
-1. **Navnekollisjon**: boka bruker `titrering.txt` for to ulike systemer — NaOH/eddiksyre
-   (kapittel 15) og glykolsyre/NaOH (kapittel 19, omtalt som "titrering.txt" i teksten, men her
-   foreslått kalt `titrering_glykolsyre.csv` for å unngå kollisjon).
-2. **Mulig duplikat**: `pingviner.txt` (kapittel 15) og `penguins.txt` (kapittel 16) kan være
-   samme datasett under to ulike navn — bør sjekkes mot bokas fasit/materiale.
-3. **Manglende filnavn**: heisturdataene i kapittel 19 (Test deg selv 12.4) har ikke noe oppgitt
-   filnavn i boka.
-4. Flere oppgaver viser kun de første radene med data i selve oppgaveteksten (fiskedata,
-   kornfordeling, nedbør, heistur, aksel_tid, infiltrasjon, temp_dybde, sediment_elv) — disse kan
-   trolig rekonstrueres/utvides fra teksten kombinert med den matematiske sammenhengen oppgaven
-   beskriver.
+- `titrering.txt` (kap. 15, NaOH/eddiksyre) og den nye `titrering_glykolsyre.csv` (kap. 19) er nå
+  atskilt med egne filnavn for å unngå navnekollisjonen som fantes i boka.
+- `pingviner.txt` (kap. 15) og `penguins.txt` (kap. 16) er bekreftet å være samme datasett
+  (funnet identisk i `realprog`-repoet), ikke to ulike filer.
+- Heisturdataene i kap. 19 er identifisert som `heistur_kjemi_fysikk.txt` fra
+  `programmering-i-kjemi` — tallene stemmer eksakt med utdraget i boka.
