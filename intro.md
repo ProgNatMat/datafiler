@@ -8,7 +8,7 @@ trenger. De fleste filene er ekte datasett gjenbrukt fra forfatterens andre bøk
 noen er syntetiske datasett generert med realistiske verdier der ingen ekte fil fantes fra før —
 dette er merket tydelig på hver kapittelside.
 
-Kapittel 8–14, 17, 18 og 20 har ingen datafiler og er derfor ikke listet opp.
+Kapittel 1–7, 10, 11 og 13 har ingen datafiler og er derfor ikke listet opp.
 
 Se [`TODO.md`](https://github.com/andreasdh/programmering-for-naturvitenskap-og-matematikk/blob/main/TODO.md)
 i repoet for kilder, forbehold og punkter som bør kvalitetssjekkes.

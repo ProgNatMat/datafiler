@@ -20,7 +20,7 @@ siden på `https://andreasdh.github.io/programmering-for-naturvitenskap-og-matem
 
 ## Status
 
-Kapittel 15, 16, 19, 21 og 22 har datafiler (kapittel 8–14, 17, 18 og 20 har ingen). Alle filene
+Kapittel 8, 9, 12, 14 og 15 har datafiler (kapittel 1–7, 10, 11 og 13 har ingen). Alle filene
 er lagt inn — de fleste er ekte datasett gjenbrukt fra forfatterens andre bøker/kurs
 (`programmering-i-kjemi`, `realprog`), noen er syntetiske datasett generert med realistiske
 verdier der ingen ekte fil fantes. Se `TODO.md` for detaljer, kilder og noen punkter som bør

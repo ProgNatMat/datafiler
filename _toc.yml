@@ -4,8 +4,8 @@ root: intro
 parts:
 - caption: Datafiler per kapittel
   chapters:
+  - file: kapittel-8
+  - file: kapittel-9
+  - file: kapittel-12
+  - file: kapittel-14
   - file: kapittel-15
-  - file: kapittel-16
-  - file: kapittel-19
-  - file: kapittel-21
-  - file: kapittel-22
