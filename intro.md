@@ -1,4 +1,4 @@
-# Datafiler til boka
+# Datafiler til Programmering for naturvitenskap og matematikk
 
 Her finner du datafilene (`.csv`, `.txt` m.m.) som brukes i eksempler og oppgaver i boka
 *Programmering for naturvitenskap og matematikk* av Andreas Haraldsrud og Joakim Sundnes.
