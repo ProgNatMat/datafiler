@@ -2,6 +2,7 @@
 # Book settings
 title: Datafiler
 author: Andreas Haraldsrud og Joakim Sundnes
+logo: omslag.png
 
 # Build only pages that are explicitly included in _toc.yml.
 only_build_toc_files: true
