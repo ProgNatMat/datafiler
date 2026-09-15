@@ -15,11 +15,3 @@
 | `temperatur.txt` | Oppgave 8.7 – temperatur over tid (ideell gasslov) | Syntetisk | [Last ned](data/kapittel-8/temperatur.txt) |
 | `antall-meldte-covid-19.txt` | Oppgave 8.8 – innlesing med Pandas | Ekte data | [Last ned](data/kapittel-8/antall-meldte-covid-19.txt) |
 | `blindern_yr_1938_2023.csv` | Oppgave 8.26G – årlig middeltemperatur på Blindern 1938–2023 (kilde: Norsk klimaservicesenter) | Syntetisk | [Last ned](data/kapittel-8/blindern_yr_1938_2023.csv) |
-
-```{note}
-`run1–run5.csv` er gjenbrukt fra enzymkinetikk-datasettene (S40/S60/S120/S225/S900) i
-*programmering i kjemi*. `pingviner.txt` er identisk med `penguins.txt` i kapittel 9 (samme
-datasett, brukt to steder i boka). Filer merket «Syntetisk» er generert med realistiske verdier
-basert på tallene vist i boka, og bør sjekkes/erstattes med ekte data der det finnes (særlig
-Blindern-temperaturen, som finnes hos [seklima.met.no](https://seklima.met.no)).
-```
